@@ -1,0 +1,22 @@
+[
+    {
+        "9483752093": {
+            "nombres": "Estevan",
+            "apellidos": "Perez",
+            "documento": 9483752093,
+            "direccion": "34re",
+            "num_tel": 4634642,
+            "acudiente_nombre": "Luz Mery Perez Osma",
+            "acudiente": "Fdlgksldfg"
+        }
+    },
+    {
+        "1097983275": {
+            "nombres": "Dian",
+            "apellidos": "Escobar Hitler",
+            "documento": 1097983275,
+            "direccion": "calle #65-3",
+            "num_tel": 937520935
+        }
+    }
+]
