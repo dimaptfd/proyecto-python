@@ -1,5 +1,5 @@
 
-import conrdi_funciones
+
 import funciones_registro
 
 
@@ -27,13 +27,9 @@ while True:
             user = str(input("ingrese su nombre de usario: "))
             contraseña = str(input("ingrese su contraseña: ")).lower()
         elif menu_ingreso1 == 3:
-            contraseña = input("bienvenido cordinador, porfavor ingrese su contraseña: ")
-            def validacion_cordinador (contra):
-                if contra == 12345:
-                     return conrdi_funciones
-            validacion_cordinador(contraseña)
-            
-
+            import conrdi_funciones 
+            contra = input("bienvenido cordinador, porfavor ingrese su contraseña: ")
+            conrdi_funciones.validacion_cordinador(contra)
     elif menu1 == 2:
         funciones_registro.pedir_datos()
         print("registro")
