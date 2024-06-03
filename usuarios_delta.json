@@ -1,0 +1,22 @@
+{
+    "ingresados": {
+        "454": {
+            "nombres": "Fvgf",
+            "apellidos": "Ds",
+            "direccion": "fd",
+            "num_tel": 41,
+            "estados": "en proceso de inscripcion"
+        },
+        "4578": {
+            "nombres": "Vxc",
+            "apellidos": "Dsfd",
+            "direccion": "vcx",
+            "num_tel": 23,
+            "acudiente_nombre": "Dfsdsf",
+            "acudiente documento": 343,
+            "parentesco acudiente": "cd",
+            "num_tel acudiente": 0,
+            "estados": "en proceso de inscripcion"
+        }
+    }
+}
