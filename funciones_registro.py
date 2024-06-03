@@ -16,10 +16,9 @@ def pedir_datos():
         docu = usuarios["documento"] = int(input("documento: "))
         usuarios["direccion"] = input("direccion: ")
         usuarios["num_tel"] = int(input("numero de celular / telefono: "))
-        estados ="en proceso de inscripcion"      
-        usuarios["estado":estados] 
-        campers = {docu:usuarios}
-        cargar_y_guardar(campers)
+        usuarios["estados"] ="en proceso de inscripcion" 
+        users = {users:usuarios}
+        cargar_y_guardar(users)
     elif edad == 17:
         
         usuarios["nombres"] = str(input("nombres: ")).title()
@@ -32,11 +31,10 @@ def pedir_datos():
         usuarios["acudiente documento"] = int(input("acudiente; documento: "))
         usuarios["parentesco acudiente"] = str(input("parentesco: "))
         usuarios["num_tel acudiente"] = int(input("numero / telefono, del acudiente: "))
-        estados ="en proceso de inscripcion"      
-        usuarios["estado":estados] 
-        campers = {docu:usuarios}
-        cargar_y_guardar(campers)
-        
+        usuarios["estados"] ="en proceso de inscripcion"      
+  
+        users = {docu:usuarios}
+        cargar_y_guardar(users)
     else: 
         print("lo sentimos, estas fuera del rango de edad para la inscripcion")
             

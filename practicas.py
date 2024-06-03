@@ -55,6 +55,6 @@ camepers= [
         }
 ]
 documento = int(input("ingrese numero de indentidad: "))
-if documento in camepers:
+if documento in campers:
 
- print(camepers[documento]["estado"])
+ print(campers[documento]["estado"])

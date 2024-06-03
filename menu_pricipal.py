@@ -29,7 +29,7 @@ while True:
         elif menu_ingreso1 == 3:
             import conrdi_funciones 
             contra = input("bienvenido cordinador, porfavor ingrese su contraseña: ")
-            conrdi_funciones.validacion_cordinador(contra)
+            conrdi_funciones.validar_contraseña(contra)
     elif menu1 == 2:
         funciones_registro.pedir_datos()
         print("registro")

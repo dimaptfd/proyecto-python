@@ -1,0 +1,30 @@
+[
+    {
+        "9": {
+            "nombres": "Dian",
+            "apellidos": "Gaviria",
+            "direccion": "calle 45# 4",
+            "num_tel": 7736473243,
+            "documento": 9,
+            "acudiente_nombre": "Luz Mery Osma Pabon",
+            "acudiente documento": 3975239582,
+            "parentesco acudiente": "madre",
+            "num_tel acudiente": 35739253,
+            "estados": "en proceso de inscripcion"
+        }
+    },
+    {
+        "123": {
+            "nombres": "Manuela",
+            "apellidos": "Gaviria",
+            "direccion": "calle sapa # coma mieda",
+            "num_tel": 9741252,
+            "documento": 123,
+            "acudiente_nombre": "Domitila Suarez De Los Anegeles",
+            "acudiente documento": 10986677445,
+            "parentesco acudiente": "mama",
+            "num_tel acudiente": 12457896,
+            "estados": "en proceso de inscripcion"
+        }
+    }
+]
