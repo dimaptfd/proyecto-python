@@ -26,5 +26,35 @@
             "num_tel acudiente": 12457896,
             "estados": "en proceso de inscripcion"
         }
+    },
+    {
+        "7": {
+            "nombres": "D",
+            "apellidos": "H",
+            "documento": 7,
+            "direccion": "8u",
+            "num_tel": 6,
+            "estados": "en proceso de inscripcion"
+        }
+    },
+    {
+        "78": {
+            "nombres": "H",
+            "apellidos": "Ye",
+            "documento": 78,
+            "direccion": "6tgd",
+            "num_tel": 45,
+            "estados": "en proceso de inscripcion"
+        }
+    },
+    {
+        "6": {
+            "nombres": "H",
+            "apellidos": "U",
+            "documento": 6,
+            "direccion": "d3",
+            "num_tel": 2,
+            "estados": "en proceso de inscripcion"
+        }
     }
 ]

@@ -17,8 +17,8 @@ def pedir_datos():
         usuarios["direccion"] = input("direccion: ")
         usuarios["num_tel"] = int(input("numero de celular / telefono: "))
         usuarios["estados"] ="en proceso de inscripcion" 
-        users = {users:usuarios}
-        cargar_y_guardar(users)
+        
+        cargar_y_guardar(usuarios)
     elif edad == 17:
         
         usuarios["nombres"] = str(input("nombres: ")).title()
@@ -33,8 +33,8 @@ def pedir_datos():
         usuarios["num_tel acudiente"] = int(input("numero / telefono, del acudiente: "))
         usuarios["estados"] ="en proceso de inscripcion"      
   
-        users = {docu:usuarios}
-        cargar_y_guardar(users)
+        
+        cargar_y_guardar(usuarios)
     else: 
         print("lo sentimos, estas fuera del rango de edad para la inscripcion")
             
