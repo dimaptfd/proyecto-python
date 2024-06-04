@@ -1,10 +1,10 @@
 {
     "ingresados": {
         "123": {
-            "nombres": "Kevin",
-            "apellidos": "Romero",
-            "direccion": "f",
-            "num_tel": 1234,
+            "nombres": "Adrian",
+            "apellidos": "Ortariz",
+            "direccion": "calle 13",
+            "num_tel": 666,
             "estados": "aprobado"
         },
         "7": {
@@ -19,7 +19,14 @@
             "apellidos": "Jh",
             "direccion": "8j",
             "num_tel": 4568,
-            "estados": "en proceso de inscripcion"
+            "estados": "aprobado"
+        },
+        "7894": {
+            "nombres": "Catalina",
+            "apellidos": "Santafe",
+            "direccion": "calle 55 #j",
+            "num_tel": 9658478,
+            "estados": "reprobado"
         }
     }
 }

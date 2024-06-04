@@ -1,4 +1,4 @@
-from funciones_cargar_guardar import guardar, cargar, eliminar_users
+from funciones_cargar_guardar import guardar, cargar
 
 def validar_contraseña(contra):
     yuca = cargar()
@@ -34,9 +34,9 @@ def validar_contraseña(contra):
                         print("Opción inválida. Intente nuevamente.")
                 elif opcion == 2:
                     menu_campers = (
-                        "1 para calificar prueba de ingreso\n"
-                        "2 cambiar estado campers\n"
-                        "3 actualizar informacion"
+                        "1 para calificar prueba de ingreso: \n"
+                        "2 cambiar estado campers: \n"
+                        "3 ver campers: "
                     )
                     print(menu_campers)
                     submenu1 = int(input("Ingrese una opción: "))
@@ -46,25 +46,29 @@ def validar_contraseña(contra):
                         if str(docu_buscar) in yuca ["ingresados"]:
 
 
-                            brr = int(input("ingrese nota del prueva: "))
-                            if 59 <= int(brr) <= 100:
+                            nota = int(input("ingrese nota del prueva: "))
+                            if 59 <= int(nota) and int(nota) <= 100:
                                 yuca["ingresados"][str(docu_buscar)]["estados"] = "aprobado"
                                
                                 guardar(yuca)
                                 print("Estado cambiado con éxito")
                             else:
                                 yuca["ingresados"][str(docu_buscar)]["estados"] = "reprobado"
+                                "ingresados".pop([str(docu_buscar)])
                                
                                 guardar(yuca)
-                                print("Estado cambiado con éxito")
+                                print("filtrado...")
                         else:
                             print("Usuario no encontrado")
-                    elif submenu1 == "2":
+                    elif submenu1 == 2:
                         # Implementar cambiar estado campers
                         pass
-                    elif submenu1 == "3":
-                        # Implementar actualizar informacion
-                        pass
+                    elif submenu1 == 3:
+                        import json
+                        from funciones_cargar_guardar import mostrar_informacion 
+                        
+                        ruta = 'usuarios_delta.json'
+                        mostrar_informacion(ruta)
                     else:
                         print("Opción inválida. Intente nuevamente.")
                 elif opcion == 3:
@@ -74,9 +78,20 @@ def validar_contraseña(contra):
                     )
                     print(menu_rutas)
                     submenu = input("Ingrese una opción: ")
-                    if submenu == "1":
-                        # Implementar agregar rutas
-                        pass
+                    if submenu == 1:
+                       import funciones_cargar_guardar as hola 
+                       bb = hola.cargar_ruta(rutas)
+                       rutas ={ }
+                       rutas["ruta"] = input("nombre ruta")
+                       print("favor asignar grupo a la ruta")
+                       grupos = (
+                           "aa1\n",
+                           "bb2\n",
+                           "cc3\n"
+                       )
+                       print (grupos)
+                       ruta["grupo asignado: "] = input(">> ")
+                       hola.guardar_ruta(bb)
                     elif submenu == "2":
                         # Implementar cambiar de ruta a los grupos
                         pass

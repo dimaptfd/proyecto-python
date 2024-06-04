@@ -13,13 +13,26 @@ def cargar():
             datos = json.load(read)
             return datos
     except FileNotFoundError:
-        return {"ingresados": { }}
+        return {"ingresados": { } }
 
-def eliminar_users(datos):
+def mostrar_informacion(ruta):
+    with open(ruta) as contenido:
+        cursos = json.load(contenido)
+        print(cursos)
+
+
+
+def guardar_ruta(nuevos_datos):
+    nombre_archivo = 'rutas.json'
     with open(nombre_archivo, "w") as archivo:
-        json.pop(datos ,archivo, indent=4)
+        json.dump(nuevos_datos ,archivo, indent=4)
 
 
 
-
-    
+def cargar_ruta():
+    try: 
+        with open(nombre_archivo, "r") as read:
+            datos = json.load(read)
+            return datos
+    except FileNotFoundError:
+        return {"rutas_grupos": { } }
