@@ -13,26 +13,13 @@ def cargar():
             datos = json.load(read)
             return datos
     except FileNotFoundError:
-        return{"ingresados": { }}
+        return {"ingresados": { }}
+
+def eliminar_users(datos):
+    with open(nombre_archivo, "w") as archivo:
+        json.pop(datos ,archivo, indent=4)
+
 
 
 
     
-# def buscar_usuario(docu_buscar, archivo='usuarios.json'):
-#    try:
-#        with open(archivo, 'r') as archivo:
-#            datos = json.load(archivo)
-#    except FileNotFoundError:
-#        return None
-#    for user in datos:
-#        if user.get("docu") == docu_buscar:
-#            return user
-#    return None
-#
-# def cambiar_estado(user, nuevo_estado, archivo='usuarios.json'):
-#    if user:
-#        user["estado"] = nuevo_estado
-#        with open(archivo, 'w') as archivo:
-#            json.dump(datos, archivo, indent=4)
-#        return True
-#    return False

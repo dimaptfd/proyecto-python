@@ -1,21 +1,24 @@
 {
     "ingresados": {
-        "454": {
-            "nombres": "Fvgf",
-            "apellidos": "Ds",
-            "direccion": "fd",
-            "num_tel": 41,
-            "estados": "en proceso de inscripcion"
+        "123": {
+            "nombres": "Kevin",
+            "apellidos": "Romero",
+            "direccion": "f",
+            "num_tel": 1234,
+            "estados": "aprobado"
         },
-        "4578": {
-            "nombres": "Vxc",
-            "apellidos": "Dsfd",
-            "direccion": "vcx",
-            "num_tel": 23,
-            "acudiente_nombre": "Dfsdsf",
-            "acudiente documento": 343,
-            "parentesco acudiente": "cd",
-            "num_tel acudiente": 0,
+        "7": {
+            "nombres": "J",
+            "apellidos": "D",
+            "direccion": "43",
+            "num_tel": 45546,
+            "estados": "aprobado"
+        },
+        "67": {
+            "nombres": "H",
+            "apellidos": "Jh",
+            "direccion": "8j",
+            "num_tel": 4568,
             "estados": "en proceso de inscripcion"
         }
     }

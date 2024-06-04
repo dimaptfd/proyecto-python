@@ -1,6 +1,6 @@
 
 
-import funciones_registro
+
 
 
 while True:
@@ -31,6 +31,8 @@ while True:
             contra = input("bienvenido cordinador, porfavor ingrese su contraseña: ")
             conrdi_funciones.validar_contraseña(contra)
     elif menu1 == 2:
+        print("*******************************************************")
+        import funciones_registro
         funciones_registro.pedir_datos()
         print("registro")
     else:

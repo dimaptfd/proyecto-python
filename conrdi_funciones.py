@@ -1,6 +1,7 @@
-
+from funciones_cargar_guardar import guardar, cargar, eliminar_users
 
 def validar_contraseña(contra):
+    yuca = cargar()
     contraseña_correcta = "yosoyelcordi"
     if contra == contraseña_correcta:
         print("Contraseña correcta...")
@@ -42,17 +43,22 @@ def validar_contraseña(contra):
                     if submenu1 == 1:
                         # Implementar calificar prueba de ingreso
                         docu_buscar = int(input("numero usuario:  "))
+                        if str(docu_buscar) in yuca ["ingresados"]:
 
-                        brr = int(input("ingrese nota del prueva: "))
-                        if 59 <= int(brr) <= 100:
-                            from funciones_cargar_guardar import buscar_usuario, cambiar_estado
-                            user = buscar_usuario(docu_buscar)
-                            if user:
-                                nuevo_estado = "aprobado"
-                                cambiar_estado(user, nuevo_estado)
+
+                            brr = int(input("ingrese nota del prueva: "))
+                            if 59 <= int(brr) <= 100:
+                                yuca["ingresados"][str(docu_buscar)]["estados"] = "aprobado"
+                               
+                                guardar(yuca)
                                 print("Estado cambiado con éxito")
                             else:
-                                print("Usuario no encontrado")
+                                yuca["ingresados"][str(docu_buscar)]["estados"] = "reprobado"
+                               
+                                guardar(yuca)
+                                print("Estado cambiado con éxito")
+                        else:
+                            print("Usuario no encontrado")
                     elif submenu1 == "2":
                         # Implementar cambiar estado campers
                         pass
@@ -85,3 +91,4 @@ def validar_contraseña(contra):
                 print("Debe ingresar un número. Intente nuevamente.")
     else:
         print("Contraseña incorrecta. Intente nuevamente.")
+
