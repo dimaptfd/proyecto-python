@@ -26,10 +26,14 @@ while True:
         elif menu_ingreso1 == 2:
             user = str(input("ingrese su nombre de usario: "))
             contraseña = str(input("ingrese su contraseña: ")).lower()
+            #from funciones_traines import validacion_contraseña_trainer
+            #hee = validacion_contraseña_trainer
+            #hee(contraseña)
         elif menu_ingreso1 == 3:
             import conrdi_funciones 
             contra = input("bienvenido cordinador, porfavor ingrese su contraseña: ")
-            conrdi_funciones.validar_contraseña(contra)
+            hh = conrdi_funciones.validar_contraseña
+            hh(contra)
     elif menu1 == 2:
         print("*******************************************************")
         import funciones_registro

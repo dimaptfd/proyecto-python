@@ -20,19 +20,3 @@ def mostrar_informacion(ruta):
         cursos = json.load(contenido)
         print(cursos)
 
-
-
-def guardar_ruta(nuevos_datos):
-    nombre_archivo = 'rutas.json'
-    with open(nombre_archivo, "w") as archivo:
-        json.dump(nuevos_datos ,archivo, indent=4)
-
-
-
-def cargar_ruta():
-    try: 
-        with open(nombre_archivo, "r") as read:
-            datos = json.load(read)
-            return datos
-    except FileNotFoundError:
-        return {"rutas_grupos": { } }
