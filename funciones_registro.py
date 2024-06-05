@@ -1,10 +1,10 @@
 
 
-import funciones_cargar_guardar as nota
+import funciones_cargar_guardar as hola
 
 
 def pedir_datos():
-    rhlm= nota.cargar()
+    rhlm= hola.cargar()
     usuarios = {}
     print("**********************************************************************")
     print("para realizar la inscripcion, llene el siguiente formulario\n(tome en cuenta que su edad debe ser mayor o igual de 17 y menor que 30 años):  ")
@@ -18,7 +18,7 @@ def pedir_datos():
         usuarios["num_tel"] = int(input("numero de celular / telefono: "))
         usuarios["estados"] ="en proceso de inscripcion" 
         rhlm["ingresados"][docu] = usuarios
-        nota.guardar(rhlm)
+        hola.guardar(rhlm)
     elif edad == 17:
         
         usuarios["nombres"] = str(input("nombres: ")).title()
@@ -33,7 +33,7 @@ def pedir_datos():
         usuarios["num_tel acudiente"] = int(input("numero / telefono, del acudiente: "))
         usuarios["estados"] ="en proceso de inscripcion"      
         rhlm["ingresados"][docu] = usuarios
-        nota.guardar(rhlm)
+        hola.guardar(rhlm)
     else: 
         print("lo sentimos, estas fuera del rango de edad para la inscripcion")
         import menu_pricipal

@@ -27,6 +27,20 @@
             "direccion": "calle 55 #j",
             "num_tel": 9658478,
             "estados": "reprobado"
+        },
+        "456": {
+            "nombres": "Moreno",
+            "apellidos": "Cortes",
+            "direccion": "calle 13",
+            "num_tel": 78854,
+            "estados": "reprobado"
+        },
+        "45": {
+            "nombres": "Fsa",
+            "apellidos": "Fg",
+            "direccion": "g54",
+            "num_tel": 474,
+            "estados": "aprobado"
         }
     }
 }

@@ -1,0 +1,37 @@
+
+{
+    "java" : {
+        "aa1":{
+            "trainer":" ",
+            "campers":[],
+            "horario": "6:00 AM - 10:00 AM"
+
+        },
+        "aa2":{
+            "trainer":" ",
+            "campers":[],
+            "horario": "10:00 AM - 2:00 AM"
+
+        }
+
+        
+    },
+    "Netcore" : {
+        "bb2":{
+            "trainer":" ",
+            "campers":[],
+            "horario": "2:00 AM - 60:00 AM"
+
+        }
+        
+    },
+    "Nodcore" : {
+        "bb2":{
+            "trainer":" ",
+            "campers":[],
+            "horario": "6:00 AM - 10:00 AM"
+
+        }
+        
+    }
+}
