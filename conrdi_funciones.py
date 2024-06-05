@@ -1,7 +1,7 @@
 from funciones_cargar_guardar import guardar, cargar
 
 def validar_contraseña(contra):
-    yuca = cargar()
+    yuca = cargar
     contraseña_correcta = "yosoyelcordi"
     if contra == contraseña_correcta:
         print("Contraseña correcta...")
@@ -19,16 +19,15 @@ def validar_contraseña(contra):
                 opcion = int(opcion)
                 if opcion == 1:
                     menu_trainers = (
-                        "1 para agregar/eliminar trainers\n"
+                        "1 para agregar trainers\n"
                         "2 para cambiar informacion de trainer"
                     )
                     print(menu_trainers)
                     submenu = input("Ingrese una opción: ")
                     if submenu == "1":
-                        # Implementar agregar/eliminar trainers
-                        pass
+                        from funciones_traines import agragar_trainer
                     elif submenu == "2":
-                        # Implementar cambiar informacion de trainer
+                        
                         pass
                     else:
                         print("Opción inválida. Intente nuevamente.")
@@ -41,27 +40,25 @@ def validar_contraseña(contra):
                     print(menu_campers)
                     submenu1 = int(input("Ingrese una opción: "))
                     if submenu1 == 1:
-                        # Implementar calificar prueba de ingreso
+                        
                         docu_buscar = int(input("numero usuario:  "))
-                        if str(docu_buscar) in yuca ["ingresados"]:
-
-
-                            nota = int(input("ingrese nota del prueva: "))
-                            if 59 <= int(nota) and int(nota) <= 100:
+                        if str(docu_buscar) in yuca ["ingresados"]: 
+                            nota1 = int(input("ingrese nota del prueba 1: "))
+                            nota2 = int(input("ingrese nota del prueba 2: "))
+                            nota = (nota1 + nota2)/2
+                            nota_final = int(nota)/2 
+                            if 59 <= int(nota_final) and int(nota_final) <= 100:
                                 yuca["ingresados"][str(docu_buscar)]["estados"] = "aprobado"
                                
                                 guardar(yuca)
                                 print("Estado cambiado con éxito")
                             else:
                                 yuca["ingresados"][str(docu_buscar)]["estados"] = "reprobado"
-                                "ingresados".pop([str(docu_buscar)])
-                               
                                 guardar(yuca)
-                                print("filtrado...")
                         else:
                             print("Usuario no encontrado")
                     elif submenu1 == 2:
-                        # Implementar cambiar estado campers
+                       
                         pass
                     elif submenu1 == 3:
                         import json
@@ -93,7 +90,7 @@ def validar_contraseña(contra):
                        ruta["grupo asignado: "] = input(">> ")
                        hola.guardar_ruta(bb)
                     elif submenu == "2":
-                        # Implementar cambiar de ruta a los grupos
+                        
                         pass
                     else:
                         print("Opción inválida. Intente nuevamente.")
@@ -105,5 +102,4 @@ def validar_contraseña(contra):
             except ValueError:
                 print("Debe ingresar un número. Intente nuevamente.")
     else:
-        print("Contraseña incorrecta. Intente nuevamente.")
-
+        print("Contraseña incorrecta. Intente nuevamente.") 
