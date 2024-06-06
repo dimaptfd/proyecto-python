@@ -4,32 +4,56 @@
         "aa1":{
             "trainer":" ",
             "campers":[],
-            "horario": "6:00 AM - 10:00 AM"
+            "horario": "6:00 AM - 2:00 PM",
+            "salon":"artemis",
+            "ruta": "Java"
 
         },
         "aa2":{
             "trainer":" ",
             "campers":[],
-            "horario": "10:00 AM - 2:00 AM"
+            "horario": "2:00 PM - 10:00 PM",
+            "salon":"artemis",
+            "ruta": "Java"
 
         }
 
         
     },
     "Netcore" : {
+        "bb1":{
+            "trainer":" ",
+            "campers":[],
+            "horario": "6:00 AM - 2:00 PM",
+            "salon":"sputnik",
+            "ruta": "Netcore"
+
+        },
         "bb2":{
             "trainer":" ",
             "campers":[],
-            "horario": "2:00 AM - 60:00 AM"
+            "horario": "2:00 PM - 10:00 PM",
+            "salon":"sputnik",
+            "ruta": "Netcore"
 
         }
         
     },
     "Nodcore" : {
-        "bb2":{
+        "cc1":{
             "trainer":" ",
             "campers":[],
-            "horario": "6:00 AM - 10:00 AM"
+            "horario": "6:00 AM - 2:00 PM",
+            "salon": "apolo",
+            "Ruta": "Nodcore"
+        },
+        "cc2":{
+            "trainer":" ",
+            "campers":[],
+            "horario": "2:00 PM - 10:00 PM",
+            "salon": "apolo",
+            "Ruta": "Nodcore"
+
 
         }
         

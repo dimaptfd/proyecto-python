@@ -1,60 +1,69 @@
-[
-    {
-        "9": {
-            "nombres": "Dian",
-            "apellidos": "Gaviria",
-            "direccion": "calle 45# 4",
-            "num_tel": 7736473243,
-            "documento": 9,
-            "acudiente_nombre": "Luz Mery Osma Pabon",
-            "acudiente documento": 3975239582,
-            "parentesco acudiente": "madre",
-            "num_tel acudiente": 35739253,
-            "estados": "en proceso de inscripcion"
-        }
-    },
-    {
+{
+    "ingresados": {
         "123": {
-            "nombres": "Manuela",
-            "apellidos": "Gaviria",
-            "direccion": "calle sapa # coma mieda",
-            "num_tel": 9741252,
-            "documento": 123,
-            "acudiente_nombre": "Domitila Suarez De Los Anegeles",
-            "acudiente documento": 10986677445,
-            "parentesco acudiente": "mama",
-            "num_tel acudiente": 12457896,
+            "nombres": "Hola",
+            "apellidos": "Perez",
+            "direccion": "calle 12",
+            "num_tel": 102457,
             "estados": "en proceso de inscripcion"
-        }
-    },
-    {
-        "7": {
-            "nombres": "D",
+        },
+        "7854": {
+            "nombres": "Sjfa",
+            "apellidos": "Dsfaj",
+            "direccion": "sdfa",
+            "num_tel": 74155,
+            "acudiente_nombre": "Madre",
+            "acudiente documento": 7415,
+            "parentesco acudiente": "madre",
+            "num_tel acudiente": 74555,
+            "estados": "en proceso de inscripcion"
+        },
+        "789": {
+            "nombres": "Mariana",
+            "apellidos": "Pere",
+            "direccion": "afasdf",
+            "num_tel": 741,
+            "acudiente_nombre": "Madre",
+            "acudiente documento": 745,
+            "parentesco acudiente": "sdff",
+            "num_tel acudiente": 789,
+            "estados": "en proceso de inscripcion"
+        },
+        "4": {
+            "nombres": "E",
             "apellidos": "H",
-            "documento": 7,
-            "direccion": "8u",
-            "num_tel": 6,
+            "direccion": "calle 13",
+            "num_tel": 74,
+            "acudiente_nombre": "M",
+            "acudiente documento": 7,
+            "parentesco acudiente": "madre",
+            "num_tel acudiente": 8,
             "estados": "en proceso de inscripcion"
-        }
-    },
-    {
-        "78": {
-            "nombres": "H",
-            "apellidos": "Ye",
-            "documento": 78,
-            "direccion": "6tgd",
-            "num_tel": 45,
+        },
+        "7": {
+            "nombres": "F",
+            "apellidos": "D",
+            "direccion": "12",
+            "num_tel": 78,
+            "acudiente_nombre": "M",
+            "acudiente documento": 5,
+            "parentesco acudiente": "madre",
+            "num_tel acudiente": 9,
             "estados": "en proceso de inscripcion"
-        }
-    },
-    {
-        "6": {
-            "nombres": "H",
-            "apellidos": "U",
-            "documento": 6,
-            "direccion": "d3",
-            "num_tel": 2,
+        },
+        "9": {
+            "nombres": "F",
+            "apellidos": "D",
+            "direccion": "f",
+            "num_tel": 4,
+            "estados": "en proceso de inscripcion"
+        },
+        "9": {
+            "nombres": "D",
+            "apellidos": "S",
+            "direccion": "f",
+            "num_tel": 7,
             "estados": "en proceso de inscripcion"
         }
     }
-]
+}

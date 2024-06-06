@@ -137,25 +137,56 @@
  #               
  #               pass
  #                                   
-import funciones_cargar_guardar as hola
+#import funciones_cargar_guardar as hola
+#
+#def añadagrupo():
+#    rhlm = hola.cargar()
+#    documento = int(input("Digite el documento"))
+#    if str(documento) in ["ingresados"]:
+#        ruta = (
+#            "java\n",
+#            "Netcore\n",
+#            "Nodejs"
+#        )
+#        opc1 = int(input("Digite la ruta en la que lo quiere pasar"))
+#        if opc1 == 1:
+#            rhlm["java"]["campers"].append(documento)
+#            hola.guardar(rhlm)
+#        if opc1 == 2:
+#            rhlm["Netcore"]["campers"].append(documento)
+#            hola.guardar(rhlm)
+#        if opc1 == 3:
+#            rhlm["Nodejs"]["campers"].append(documento)
+from funciones_cargar_guardar import guardar, cargar
+datos = cargar()
+def validar_documento(documento_numero, datos):
+    return documento_numero not in datos.get("ingresados", {})
 
-def añadagrupo():
-    rhlm = hola.cargar
-    documento = int(input("Digite el documento"))
-    if str(documento) in ["ingresados"]:
-        ruta = (
-            "java\n",
-            "Netcore\n",
-            "Nodejs"
-        )
-        opc1 = int(input("Digite la ruta en la que lo quiere pasar"))
-        if opc1 == 1:
-            rhlm["java"]["campers"].append(documento)
-            hola.guardar(rhlm)
-        if opc1 == 2:
-            rhlm["Netcore"]["campers"].append(documento)
-            hola.guardar(rhlm)
-        if opc1 == 3:
-            rhlm["Nodejs"]["campers"].append(documento)
-            hola.guardar(rhlm)
+def registrar_usuario(nombre, documento_numero, datos):
+    if not validar_documento(documento_numero, datos):
+        return False
+    nuevo_usuario = {"nombre": nombre}
+    datos["ingresados"][documento_numero] = nuevo_usuario
+    guardar(datos)
+    return True
 
+
+
+#if __name__ == '__main__':
+#    datos = cargar()
+#    usuario = True
+#    
+#    documento = int(input("Ingresa número de documento: "))
+#    users = {"documento_numero": documento, "nombre": input("Nombre: "), "edad": int(input("Edad: "))}
+#    
+#    if validacion_existencia(documento, datos):
+#        datos.setdefault("ingresados", {})[str(documento)] = users
+#        guardar(datos)
+#        print("Datos guardados correctamente.")
+#    else:
+#        print("Paila...")
+        
+    
+    
+
+    
